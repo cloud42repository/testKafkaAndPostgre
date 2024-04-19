@@ -51,7 +51,7 @@ async function testKafkaConnect(){
         portPostgres = args[4];
     }else{
         hostPostgres = getLocalIp();
-        portPostgres = port;
+        portPostgres = await getDefaultPort();
     }
     console.log(`broker ${broker}`);
     console.log(`hostPostgres ${hostPostgres}`);
