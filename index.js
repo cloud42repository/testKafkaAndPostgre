@@ -38,11 +38,12 @@ async function testKafkaConnect(){
     let hostPostgres;
     let portPostgres;
     let broker;
-    const port = await getDefaultPort();
+    //const port = await getDefaultPort();
     if(args[2]){
         broker = args[2];
     }else{
-        const ip = getLocalIp();
+        const ip = 'localhost';//getLocalIp();
+        const port = '9092';
         broker = `${ip}:${port}`;
     }
     if(args[3] && args[4]){
