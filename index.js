@@ -31,7 +31,7 @@ function getLocalIp(){
     }
     console.log(`nets : ${JSON.stringify(nets)}`)
     console.log(`nets filtred : ${JSON.stringify(results)}`)
-    return results["vEthernet (WSL (Hyper-V firewall))"][0];
+    return results["eth0"][0];
 }
 
 async function testKafkaConnect(){
