@@ -110,7 +110,17 @@ async function testPostgreConnect(){
     console.log('postgres connected!!');
 }
 async function test(){
-    await testKafkaConnect();
-    await testPostgreConnect();
+    try{
+        await testKafkaConnect();
+    }
+    catch(e){
+        console.error(e);
+    }
+    try{
+        await testPostgreConnect();
+    }
+    catch(e){
+        console.error(e);
+    }
 }
 test();
