@@ -1,0 +1,11 @@
+{
+    "name": "test_kafka_postgres",
+    "version": "1.0.0",
+    "author": "AOL",
+    "type": "module",
+    "dependencies": {
+        "get-port": "^7.1.0",
+        "kafkajs": "^2.2.4",
+        "postgres": "^3.4.4"
+    }
+}
